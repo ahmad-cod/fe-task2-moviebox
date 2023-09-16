@@ -51,8 +51,8 @@ const Movie = async ({ params }: { params: { id: number } }) => {
             <div className='flex sm:ml-[220px] flex-col flex-1 p-2 xl:p-9'>
                 <div>
 
-                    <div className='relative object-cover object-center h-[300px] lg:h-[550px] xl:h-[600px] inset-0'>
-                        <Image sizes="(min-width: 808px) 50vw, 100vw" layout='fill' objectFit='fill' src={`https://image.tmdb.org/t/p/w220_and_h330_face/${movie.backdrop_path}`} className=' block rounded-md lg:rounded-[10px] object-fill object-center h-full' alt='movie preview' />
+                    <div className='relative object-cover object-center h-[300px] lg:h-[450px] inset-0'>
+                        <Image sizes="(min-width: 808px) 50vw, 100vw" layout='fill' objectFit='fill' src={`https://image.tmdb.org/t/p/w220_and_h330_face/${movie.backdrop_path}`} className=' block rounded-md lg:rounded-[20px] object-fill object-center h-full' alt='movie preview' />
                         <button className='absolute outline-none rounded-full flex justify-center items-center w-[65px] h-[65px] md:w-[80px] md:h-[80px] xl:w-[110px] bg-[#ffffff59] xl:h-[110px] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
                             <Image src='/play.png' className='w-[30px] md:w-[40px] xl:w-[54px]' width={54} height={54} alt='play' />
                         </button>
